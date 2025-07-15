@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User data</title>
+<style>
+body { font-family: sans-serif; margin: 20px; background-color: white; }
+h1, h2 { color: darkcyan; text-align: left; }
+.form, .table { background-color: whitesmoke; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+form label { margin-left: 10px; font-weight: bold; }
+form input { padding: 8px; margin-left: 10px; border: 1px solid #ddd; border-radius: 4px; text-align: left; }
+form button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+table th, table td { padding: 12px; border: 1px solid #ddd; text-align: center; }
+table th { background-color: #f2f2f2; }
+.toggle-btn { padding: 8px 12px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>User data</h1>
+
+<div class="form">
+<form id="addUserForm">
+<label for="name">Name: </label><input type="text" id="name" name="name" required>
+<label for="age">Age: </label><input type="number" id="age" name="age" required>
+<button type="submit">submit</button>
+</form>
+</div>
+
+<div class="table">
+<h2>Users</h2>
+<table id="userTable">
+<thead>
+<tr><th>id</th><th>name</th><th>age</th><th>status</th><th>action</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
